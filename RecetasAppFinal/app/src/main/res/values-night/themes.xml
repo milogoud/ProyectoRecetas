@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema Oscuro -->
+    <style name="Theme.RecetasAppFinal_Dark" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">#BB86FC</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#000000</item>
+
+        <!-- Fondo y texto -->
+        <item name="android:colorBackground">#121212</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+
+        <!-- Personalizar barra de estado -->
+        <item name="android:statusBarColor">#121212</item>
+    </style>
+</resources>

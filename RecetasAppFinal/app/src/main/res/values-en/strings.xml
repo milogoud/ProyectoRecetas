@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">FinalRecipesApp</string>
+
+    <string-array name="categorias_platos">
+        <item></item>
+        <item>Appetizers</item>
+        <item>Main Courses</item>
+        <item>Desserts</item>
+    </string-array>
+
+
+        <string name="selecciona_tipo_plato">Select the type of dish.</string>
+        <string name="gestion_platos">Dish Management</string>
+        <string name="volver">Back</string>
+    <string name="menu_preferencias">Menu preferences</string>
+    <string name= "postres">Desserts</string>
+    <string name= "entrantes">Starters</string>
+    <string name= "platosprincipales">Main dishes</string>
+    <string name="gestion_platos_version">RecipesApp v1.0</string>
+    <string name="desarrollado_por">Developed by Julian</string>
+
+
+    <string name="preferencias">Preferences</string>
+    <string name="abrir_pagina_web">Open Web Page</string>
+    <string name="acerca_de">About</string>
+    <string name ="modoscuro">Dark mode</string>
+    <string name="toast_acerca_de">Dish Management v1.0\nDeveloped by Julian</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Appetizers -->
+    <string name="ensalada_cesar">Caesar Salad</string>
+    <string name="desc_ensalada_cesar">Lettuce, chicken, croutons, and Caesar dressing.</string>
+
+    <string name="sopa_tomate">Tomato Soup</string>
+    <string name="desc_sopa_tomate">Fresh tomatoes with basil and garlic.</string>
+
+    <string name="carpaccio_ternera">Beef Carpaccio</string>
+    <string name="desc_carpaccio_ternera">Thin slices of beef with Parmesan cheese.</string>
+
+    <string name="bruschetta_tomate">Tomato Bruschetta</string>
+    <string name="desc_bruschetta_tomate">Toasted bread with tomato, garlic, and basil.</string>
+
+    <string name="hummus_pita">Hummus with Pita Bread</string>
+    <string name="desc_hummus_pita">Chickpea puree with tahini and olive oil.</string>
+
+    <string name="rollitos_primavera">Spring Rolls</string>
+    <string name="desc_rollitos_primavera">Crispy rolls filled with vegetables.</string>
+
+    <string name="gazpacho_andaluz">Andalusian Gazpacho</string>
+    <string name="desc_gazpacho_andaluz">Cold soup made of tomato, pepper, and cucumber.</string>
+
+    <string name="patatas_bravas">Patatas Bravas</string>
+    <string name="desc_patatas_bravas">Fried potatoes with spicy sauce and aioli.</string>
+
+    <string name="croquetas_jamon">Ham Croquettes</string>
+    <string name="desc_croquetas_jamon">Crispy croquettes filled with béchamel and ham.</string>
+
+    <string name="ceviche_pescado">Fish Ceviche</string>
+    <string name="desc_ceviche_pescado">Fish marinated in lime with onion and cilantro.</string>
+
+    <string name="champiñones_rellenos">Stuffed Mushrooms</string>
+    <string name="desc_champiñones_rellenos">Baked mushrooms filled with cheese and herbs.</string>
+
+    <string name="queso_camembert">Baked Camembert Cheese</string>
+    <string name="desc_queso_camembert">Melted cheese with honey and walnuts.</string>
+
+    <string name="tostadas_aguacate">Avocado Toast</string>
+    <string name="desc_tostadas_aguacate">Toasted bread with avocado, egg, and spices.</string>
+
+    <string name="baba_ganoush">Baba Ganoush</string>
+    <string name="desc_baba_ganoush">Roasted eggplant puree with tahini and garlic.</string>
+
+
+<!-- Main Courses -->
+<string name="lasagna_carne">Beef Lasagna</string>
+<string name="desc_lasagna_carne">Layers of pasta with beef and béchamel sauce.</string>
+
+<string name="pollo_curry">Chicken Curry</string>
+<string name="desc_pollo_curry">Chicken with spices and coconut milk.</string>
+
+<string name="bacalao_vizcaina">Basque-Style Cod</string>
+<string name="desc_bacalao_vizcaina">Cod with tomato sauce and peppers.</string>
+
+<string name="paella_valenciana">Valencian Paella</string>
+<string name="desc_paella_valenciana">Rice with chicken, rabbit, and vegetables.</string>
+
+<string name="cochinita_pibil">Cochinita Pibil</string>
+<string name="desc_cochinita_pibil">Pork marinated with annatto and slow-cooked.</string>
+
+<string name="ratatouille">Ratatouille</string>
+<string name="desc_ratatouille">Oven-roasted vegetables with tomato sauce and spices.</string>
+
+<string name="filete_wellington">Beef Wellington</string>
+<string name="desc_filete_wellington">Beef wrapped in puff pastry with mushrooms.</string>
+
+<string name="cordero_horno">Roast Lamb</string>
+<string name="desc_cordero_horno">Leg of lamb roasted with garlic and rosemary.</string>
+
+<string name="risotto_setas">Mushroom Risotto</string>
+<string name="desc_risotto_setas">Creamy rice with mushrooms and Parmesan cheese.</string>
+
+<string name="entrecot_parrilla">Grilled Ribeye Steak</string>
+<string name="desc_entrecot_parrilla">Grilled beef steak with coarse salt.</string>
+
+<string name="pasta_alfredo">Alfredo Pasta</string>
+<string name="desc_pasta_alfredo">Fettuccine with creamy Parmesan cheese sauce.</string>
+
+<string name="salmon_miel_mostaza">Honey Mustard Salmon</string>
+<string name="desc_salmon_miel_mostaza">Oven-baked salmon with honey and mustard glaze.</string>
+
+<string name="goulash">Goulash</string>
+<string name="desc_goulash">Hungarian beef stew with paprika.</string>
+
+<string name="tacos_pastor">Al Pastor Tacos</string>
+<string name="desc_tacos_pastor">Marinated pork tacos with pineapple and spices.</string>
+
+
+        <!-- Desserts -->
+        <string name="tarta_fresa">Strawberry Cake</string>
+        <string name="desc_tarta_fresa">Delicious cake with fresh strawberries.</string>
+
+        <string name="flan_vainilla">Vanilla Flan</string>
+        <string name="desc_flan_vainilla">A soft and sweet flan.</string>
+
+        <string name="mousse_chocolate">Chocolate Mousse</string>
+        <string name="desc_mousse_chocolate">Creamy dessert with dark chocolate.</string>
+
+        <string name="cheesecake_frutos">Berry Cheesecake</string>
+        <string name="desc_cheesecake_frutos">Cheesecake with forest fruits.</string>
+
+        <string name="brownie_chocolate">Chocolate Brownie</string>
+        <string name="desc_brownie_chocolate">Dense chocolate cake with walnuts.</string>
+
+        <string name="creme_brulee">Crème Brûlée</string>
+        <string name="desc_creme_brulee">Vanilla cream with caramelized sugar crust.</string>
+
+        <string name="helado_pistacho">Pistachio Ice Cream</string>
+        <string name="desc_helado_pistacho">Homemade ice cream with pistachio pieces.</string>
+
+        <string name="churros_chocolate">Churros with Chocolate</string>
+        <string name="desc_churros_chocolate">Fried dough with sugar and hot chocolate.</string>
+
+        <string name="tiramisu">Tiramisu</string>
+        <string name="desc_tiramisu">Italian dessert with coffee, mascarpone, and cocoa.</string>
+
+        <string name="pavlova">Pavlova</string>
+        <string name="desc_pavlova">Crispy meringue with cream and fruits.</string>
+
+        <string name="profiteroles">Profiteroles</string>
+        <string name="desc_profiteroles">Small pastry puffs filled with cream and covered in chocolate.</string>
+
+        <string name="panna_cotta">Panna Cotta</string>
+        <string name="desc_panna_cotta">Italian creamy dessert with red fruit sauce.</string>
+
+        <string name="pastel_zanahoria">Carrot Cake</string>
+        <string name="desc_pastel_zanahoria">Fluffy sponge cake with carrot and cream cheese.</string>
+
+        <string name="macarons">Macarons</string>
+        <string name="desc_macarons">French almond cookies with creamy filling.</string>
+
+
+
+</resources>
+
