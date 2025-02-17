@@ -1,22 +1,19 @@
-package com.julian.recetasappfinal
+package com.julian.recetasappfinal.view
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.julian.recetasappfinal.R
 import com.julian.recetasappfinal.databinding.Activity1Binding
 
-class Activity1 :  BaseActivity()  {
+class Activity1 :  AppCompatActivity()  {
     private lateinit var binding: Activity1Binding
     private var isFirstSelection = true // Variable para controlar la primera selección
 

@@ -1,8 +1,9 @@
-package com.julian.recetasappfinal
+package com.julian.recetasappfinal.view
 
 import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.julian.recetasappfinal.R
 
 open class BaseActivity : AppCompatActivity() {
 

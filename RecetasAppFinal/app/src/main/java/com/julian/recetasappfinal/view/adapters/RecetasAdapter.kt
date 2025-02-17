@@ -1,9 +1,10 @@
-package com.julian.recetasappfinal
+package com.julian.recetasappfinal.view.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.julian.recetasappfinal.databinding.ItemRecetaBinding
+import com.julian.recetasappfinal.model.Receta
 
 class RecetasAdapter(private val recetas: List<Receta>) :
     RecyclerView.Adapter<RecetasAdapter.RecetaViewHolder>() {

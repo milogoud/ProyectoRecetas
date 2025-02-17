@@ -1,4 +1,4 @@
-package com.julian.recetasappfinal
+package com.julian.recetasappfinal.model
 
 data class Receta(
     val nombre: String,

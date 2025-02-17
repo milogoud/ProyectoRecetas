@@ -1,4 +1,4 @@
-package com.julian.recetasappfinal
+package com.julian.recetasappfinal.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.julian.recetasappfinal.R
 import com.julian.recetasappfinal.databinding.FragmentEntrantesBinding
+import com.julian.recetasappfinal.model.Receta
+import com.julian.recetasappfinal.view.adapters.RecetasAdapter
 
 class EntrantesFragment : Fragment() {
     private var _binding: FragmentEntrantesBinding? = null

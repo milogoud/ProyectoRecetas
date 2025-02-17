@@ -13,16 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecetasAppFinal_Light">
         <activity
-            android:name=".AcercaDeActivity"
+            android:name=".view.AcercaDeActivity"
             android:exported="false" />
         <activity
-            android:name=".RecetasActivity"
+            android:name=".view.RecetasActivity"
             android:exported="false" />
         <activity
-            android:name=".PreferenciasActivity"
+            android:name=".view.PreferenciasActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity1"
+            android:name=".view.Activity1"
             android:exported="true"
             android:screenOrientation="unspecified">
             <intent-filter>

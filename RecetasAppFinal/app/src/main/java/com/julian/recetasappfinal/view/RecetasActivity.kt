@@ -1,9 +1,10 @@
-package com.julian.recetasappfinal
+package com.julian.recetasappfinal.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import com.julian.recetasappfinal.databinding.ActivityRecetasBinding
+import com.julian.recetasappfinal.view.adapters.RecetasPagerAdapter
 
 class RecetasActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRecetasBinding
