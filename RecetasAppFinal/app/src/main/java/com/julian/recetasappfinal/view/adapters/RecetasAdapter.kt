@@ -1,4 +1,4 @@
-package com.julian.recetasappfinal.view.adapters
+package com.julian.recetasappfinal.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,15 +6,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.julian.recetasappfinal.databinding.ItemRecetaBinding
 import com.julian.recetasappfinal.model.Receta
 
-class RecetasAdapter(private val recetas: List<Receta>) :
-    RecyclerView.Adapter<RecetasAdapter.RecetaViewHolder>() {
+class RecetasAdapter : RecyclerView.Adapter<RecetasAdapter.RecetaViewHolder>() {
 
-    inner class RecetaViewHolder(private val binding: ItemRecetaBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-        fun bind(receta: Receta) {
-            binding.tvNombreReceta.text = receta.nombre
-            binding.tvDescripcionReceta.text = receta.descripcion
-        }
+    private var listaRecetas = listOf<Receta>()
+
+    fun actualizarLista(nuevaLista: List<Receta>) {
+        listaRecetas = nuevaLista
+        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecetaViewHolder {
@@ -23,8 +21,15 @@ class RecetasAdapter(private val recetas: List<Receta>) :
     }
 
     override fun onBindViewHolder(holder: RecetaViewHolder, position: Int) {
-        holder.bind(recetas[position])
+        holder.bind(listaRecetas[position])
     }
 
-    override fun getItemCount(): Int = recetas.size
+    override fun getItemCount(): Int = listaRecetas.size
+
+    class RecetaViewHolder(private val binding: ItemRecetaBinding) : RecyclerView.ViewHolder(binding.root) {
+        fun bind(receta: Receta) {
+            binding.tvNombreReceta.text = receta.nombre
+            binding.tvDescripcionReceta.text = receta.descripcion
+        }
+    }
 }

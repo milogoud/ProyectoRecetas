@@ -1,4 +1,4 @@
-package com.julian.recetasappfinal.view
+package com.julian.recetasappfinal.view.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -34,9 +34,6 @@ class RecetasActivity : AppCompatActivity() {
         }
         binding.viewPager.setCurrentItem(tabIndex, false)
     }
-    override fun onResume() {
-        super.onResume()
-        (this as? BaseActivity)?.recargarFragmentos()
-    }
+
 
 }

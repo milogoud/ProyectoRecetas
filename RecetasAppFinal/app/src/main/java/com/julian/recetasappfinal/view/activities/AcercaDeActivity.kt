@@ -1,4 +1,4 @@
-package com.julian.recetasappfinal.view
+package com.julian.recetasappfinal.view.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

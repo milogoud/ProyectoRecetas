@@ -1,4 +1,4 @@
-package com.julian.recetasappfinal.view
+package com.julian.recetasappfinal.view.activities
 
 import android.content.Intent
 import android.net.Uri
@@ -10,24 +10,34 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.julian.recetasappfinal.R
 import com.julian.recetasappfinal.databinding.Activity1Binding
 
-class Activity1 :  AppCompatActivity()  {
+class Activity1 : AppCompatActivity() {
     private lateinit var binding: Activity1Binding
     private var isFirstSelection = true // Variable para controlar la primera selección
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        // Aplicar el modo oscuro antes de crear la UI
+        val sharedPreferences = getSharedPreferences("preferencias", MODE_PRIVATE)
+        val isDarkMode = sharedPreferences.getBoolean("modoOscuro", false)
+
+        if (isDarkMode) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+
+        super.onCreate(savedInstanceState) // 💡 Esto debe ir después del cambio de tema
 
         // Configurar ViewBinding
         binding = Activity1Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //Configurar la toolbar como action bar
-        binding.toolbar?.let {
-            setSupportActionBar(it)
-        }
+        // Configurar la toolbar como action bar
+        setSupportActionBar(binding.toolbar)
+
         // Configurar el Spinner
         val categoriasPlatos = resources.getStringArray(R.array.categorias_platos)
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, categoriasPlatos)
@@ -45,7 +55,7 @@ class Activity1 :  AppCompatActivity()  {
                 val seleccion = parent?.getItemAtPosition(position).toString()
                 Toast.makeText(this@Activity1, "Seleccionaste: $seleccion", Toast.LENGTH_SHORT).show()
 
-                // Ahora todas las categorías abren RecetasActivity con un extra
+                // Abrir RecetasActivity y pasar la categoría seleccionada
                 val intent = Intent(this@Activity1, RecetasActivity::class.java)
                 intent.putExtra("categoria", seleccion)
                 startActivity(intent)
@@ -53,15 +63,14 @@ class Activity1 :  AppCompatActivity()  {
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
-
     }
 
-    //toolbar
-
+    // Toolbar (Menú)
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main,menu)
+        menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_preferencias -> {
@@ -76,12 +85,9 @@ class Activity1 :  AppCompatActivity()  {
                 return true
             }
             R.id.action_acerca_de -> {
-                Toast.makeText(this, getString(R.string.toast_acerca_de), Toast.LENGTH_LONG).show()
                 val intent = Intent(this, AcercaDeActivity::class.java)
                 startActivity(intent)
                 return true
-
-
             }
         }
         return super.onOptionsItemSelected(item)

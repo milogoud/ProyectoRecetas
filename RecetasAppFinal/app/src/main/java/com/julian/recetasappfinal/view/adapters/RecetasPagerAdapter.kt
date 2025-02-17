@@ -4,8 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.julian.recetasappfinal.view.EntrantesFragment
-import com.julian.recetasappfinal.view.PostresFragment
-import com.julian.recetasappfinal.view.PrincipalesFragment
+
+import com.julian.recetasappfinal.view.fragments.PostresFragment
+import com.julian.recetasappfinal.view.fragments.PrincipalesFragment
 
 class RecetasPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activity) {
     override fun getItemCount(): Int = 3 // Tenemos 3 categorías: Postres, Entrantes, Principales

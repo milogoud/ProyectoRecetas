@@ -1,18 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Tema Claro -->
-    <style name="Theme.RecetasAppFinal_Light" parent="Theme.Material3.Light.NoActionBar">
-        <!-- Colores principales -->
-        <item name="colorPrimary">#6200EE</item>
-        <item name="colorPrimaryVariant">#3700B3</item>
-        <item name="colorOnPrimary">#FFFFFF</item>
-
-        <!-- Fondo y texto -->
-        <item name="android:colorBackground">#FFFFFF</item>
-        <item name="android:textColorPrimary">#000000</item>
-
-        <!-- Personalizar barra de estado -->
-        <item name="android:statusBarColor">#6200EE</item>
-
-
+    <style name="Theme.RecetasAppFinal" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorBackgroundLight</item>
+        <item name="android:textColorPrimary">@color/colorTextLight</item>
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorAccent">@color/colorAccentLight</item>
+        <item name="android:buttonStyle">@style/ButtonStyle</item>
     </style>
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryLight</item>
+    </style>
+
+
 </resources>

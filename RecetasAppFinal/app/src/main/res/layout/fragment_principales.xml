@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?android:windowBackground"
-    tools:context=".view.PrincipalesFragment">
+    tools:context=".view.fragments.PrincipalesFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,6 +14,7 @@
         android:orientation="vertical"
         android:padding="16dp"
         android:background="?android:windowBackground">
+
 
         <!-- Título -->
         <TextView
@@ -26,6 +27,16 @@
             android:textColor="?android:textColorPrimary"
             android:layout_gravity="center_horizontal"
             android:paddingBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnAgregarReceta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Receta"
+            android:backgroundTint="?android:colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"/>
 
         <!-- RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
