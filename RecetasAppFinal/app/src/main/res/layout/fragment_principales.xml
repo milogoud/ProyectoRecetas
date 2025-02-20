@@ -28,15 +28,18 @@
             android:layout_gravity="center_horizontal"
             android:paddingBottom="10dp"/>
 
-        <Button
-            android:id="@+id/btnAgregarReceta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Agregar Receta"
-            android:backgroundTint="?android:colorPrimary"
-            android:textColor="@android:color/white"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"/>
+        <!--
+       <Button
+           android:id="@+id/btnAgregarReceta"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Agregar Receta"
+           android:backgroundTint="?android:colorPrimary"
+           android:textColor="@android:color/white"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="16dp"
+           android:enabled="false"/>
+           -->
 
         <!-- RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView

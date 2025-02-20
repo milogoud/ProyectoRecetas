@@ -43,7 +43,7 @@ class PostresFragment : Fragment() {
             val postres = recetas.filter { it.tipo == "Postre" } // Filtrar solo postres
             adapter.actualizarLista(postres)
         }
-
+/*
         binding.btnAgregarReceta?.setOnClickListener {
             // Insertar 5 recetas de postres
             viewModel.agregarReceta(
@@ -76,7 +76,7 @@ class PostresFragment : Fragment() {
                 tipo = "Postre",
                 imagenResId = R.drawable.tiramisu
             )
-        }
+        }*/
     }
 
     override fun onDestroyView() {

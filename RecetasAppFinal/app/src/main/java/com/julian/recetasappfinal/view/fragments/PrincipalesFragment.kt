@@ -44,7 +44,7 @@ class PrincipalesFragment : Fragment() {
             adapter.actualizarLista(principales)
         }
 
-
+/*
         binding.btnAgregarReceta?.setOnClickListener {
             // Insertar 5 recetas de platos principales
             viewModel.agregarReceta(
@@ -77,7 +77,7 @@ class PrincipalesFragment : Fragment() {
                 tipo = "Principal",
                 imagenResId = R.drawable.burger
             )
-        }
+        }*/
     }
 
     override fun onDestroyView() {

@@ -1,11 +1,10 @@
-package com.julian.recetasappfinal
+package com.julian.recetasappfinal.view.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.julian.recetasappfinal.databinding.ActivityLoginBinding
-import com.julian.recetasappfinal.view.activities.Activity1
 
 class LoginActivity : AppCompatActivity() {
 

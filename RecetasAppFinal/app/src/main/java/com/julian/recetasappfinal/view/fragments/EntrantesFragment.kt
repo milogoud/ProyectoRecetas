@@ -42,7 +42,7 @@ class EntrantesFragment : Fragment() {
             val entrantes = recetas.filter { it.tipo == "Entrante" } // Filtrar solo entrantes
             adapter.actualizarLista(entrantes)
         }
-
+/*
         binding.btnAgregarReceta?.setOnClickListener {
             // Insertar 5 recetas de entrantes
             viewModel.agregarReceta(
@@ -75,7 +75,7 @@ class EntrantesFragment : Fragment() {
                 tipo = "Entrante",
                 imagenResId = R.drawable.empanadillas
             )
-        }
+        }*/
     }
 
     

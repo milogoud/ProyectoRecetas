@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecetasAppFinal">
 
-
+        <activity android:name=".view.activities.Activity1"
+            android:exported="true" />
         <activity
             android:name=".view.activities.AcercaDeActivity"
             android:exported="false" />
@@ -25,9 +26,8 @@
             android:exported="false" />
 
         <activity
-            android:name=".view.activities.Activity1"
-            android:exported="true"
-            android:screenOrientation="unspecified">
+            android:name=".view.activities.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

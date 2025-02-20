@@ -27,6 +27,7 @@
             android:textColor="?android:textColorPrimary"
             android:layout_gravity="center_horizontal"
             android:paddingBottom="10dp"/>
+        <!--
         <Button
             android:id="@+id/btnAgregarReceta"
             android:layout_width="wrap_content"
@@ -35,7 +36,9 @@
             android:backgroundTint="?android:colorPrimary"
             android:textColor="@android:color/white"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:enabled="false"/>
+            -->
 
         <!-- RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
