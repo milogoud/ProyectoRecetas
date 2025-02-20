@@ -5,16 +5,20 @@ import androidx.lifecycle.MutableLiveData
 import com.google.firebase.database.*
 import com.google.firebase.database.ValueEventListener
 import com.julian.recetasappfinal.model.Receta
+import java.net.URL
 
 class RecetaRepository {
 
-    private val databaseReference: DatabaseReference = FirebaseDatabase.getInstance()
-        .getReference("recetas") //
+    private var databaseReference: DatabaseReference
+    private val URL_REFERENCIA_DATABASE="https://recetasapp-da474-default-rtdb.europe-west1.firebasedatabase.app/"
+    init {
+        databaseReference=FirebaseDatabase.getInstance(URL_REFERENCIA_DATABASE).reference
+    }
 
     fun agregarReceta(receta: Receta) {
-        val id = databaseReference.push().key // Generar ID
+        val id = databaseReference.child("receta").push().key // Generar ID
         receta.id = id
-        databaseReference.child(id!!).setValue(receta)
+        databaseReference.child("receta").child(id!!).setValue(receta)
     }
 
     fun obtenerRecetas(): LiveData<List<Receta>> {
