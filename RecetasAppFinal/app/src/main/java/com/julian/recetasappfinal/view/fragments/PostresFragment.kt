@@ -38,14 +38,44 @@ class PostresFragment : Fragment() {
         binding.rvRecetas.layoutManager = LinearLayoutManager(requireContext())
         binding.rvRecetas.adapter = adapter
 
-        // Observar los cambios en los datos de Firebase
+        //filtrar por postres
         viewModel.recetasLiveData.observe(viewLifecycleOwner) { recetas ->
-            adapter.actualizarLista(recetas)
+            val postres = recetas.filter { it.tipo == "Postre" } // Filtrar solo postres
+            adapter.actualizarLista(postres)
         }
 
-        // Agregar receta de prueba
         binding.btnAgregarReceta?.setOnClickListener {
-            viewModel.agregarReceta("Nueva Receta", "Descripción de la nueva receta", null)
+            // Insertar 5 recetas de postres
+            viewModel.agregarReceta(
+                nombre = "Tarta de manzana",
+                descripcion = "Una deliciosa tarta de manzana",
+                tipo = "Postre",
+                imagenResId = R.drawable.tartamanza
+            )
+            viewModel.agregarReceta(
+                nombre = "Flan",
+                descripcion = "Flan de huevo tradicional",
+                tipo = "Postre",
+                imagenResId = R.drawable.flanvainilla
+            )
+            viewModel.agregarReceta(
+                nombre = "Helado",
+                descripcion = "Helado de vainilla con toppings",
+                tipo = "Postre",
+                imagenResId = R.drawable.helado
+            )
+            viewModel.agregarReceta(
+                nombre = "Brownie",
+                descripcion = "Brownie de chocolate con nueces",
+                tipo = "Postre",
+                imagenResId = R.drawable.brownie
+            )
+            viewModel.agregarReceta(
+                nombre = "Tiramisú",
+                descripcion = "Postre italiano con café y cacao",
+                tipo = "Postre",
+                imagenResId = R.drawable.tiramisu
+            )
         }
     }
 

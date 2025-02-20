@@ -1,12 +1,13 @@
 package com.julian.recetasappfinal.viewmodel
 
+import RecetaRepository
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.google.firebase.firestore.FirebaseFirestore
 import com.julian.recetasappfinal.model.Receta
-import com.julian.recetasappfinal.persistence.RecetaRepository
+
 
 class RecetaViewModel : ViewModel() {
     private val _recetasLiveData = MutableLiveData<List<Receta>>()
@@ -35,11 +36,13 @@ class RecetaViewModel : ViewModel() {
       return _recetasLiveData.value.orEmpty()
     }
 
-    // Agregar una nueva receta a Firebase
-    fun agregarReceta(nombre: String, descripcion: String, imagenUrl: String?) {
-        val nuevaReceta = Receta(nombre, descripcion, imagenUrl)
+    fun agregarReceta(nombre: String, descripcion: String, tipo: String, imagenResId: Int?) {
+        val nuevaReceta = Receta(
+            nombre = nombre,
+            descripcion = descripcion,
+            tipo = tipo,
+            imagenResId = imagenResId // Usar imagenResId en lugar de imagenUrl
+        )
         repository.agregarReceta(nuevaReceta)
-
-
     }
 }

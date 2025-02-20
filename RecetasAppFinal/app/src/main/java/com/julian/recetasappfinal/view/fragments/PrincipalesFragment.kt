@@ -38,14 +38,45 @@ class PrincipalesFragment : Fragment() {
         binding.rvRecetas.layoutManager = LinearLayoutManager(requireContext())
         binding.rvRecetas.adapter = adapter
 
-        // Observar los cambios en los datos de Firebase
+        // Observar los cambios en los datos de Firebase y filtrar por tipo "Principal"
         viewModel.recetasLiveData.observe(viewLifecycleOwner) { recetas ->
-            adapter.actualizarLista(recetas)
+            val principales = recetas.filter { it.tipo == "Principal" } // Filtrar solo platos principales
+            adapter.actualizarLista(principales)
         }
 
-        // Agregar receta de prueba
+
         binding.btnAgregarReceta?.setOnClickListener {
-            viewModel.agregarReceta("Nueva Receta", "Descripción de la nueva receta", null)
+            // Insertar 5 recetas de platos principales
+            viewModel.agregarReceta(
+                nombre = "Lasaña",
+                descripcion = "Lasaña de carne y queso",
+                tipo = "Principal",
+                imagenResId = R.drawable.lasana
+            )
+            viewModel.agregarReceta(
+                nombre = "Pasta carbonara",
+                descripcion = "Pasta con salsa carbonara",
+                tipo = "Principal",
+                imagenResId = R.drawable.pasta
+            )
+            viewModel.agregarReceta(
+                nombre = "Pollo al curry",
+                descripcion = "Pollo con salsa de curry y arroz",
+                tipo = "Principal",
+                imagenResId = R.drawable.curry
+            )
+            viewModel.agregarReceta(
+                nombre = "Paella",
+                descripcion = "Paella de mariscos",
+                tipo = "Principal",
+                imagenResId = R.drawable.paella
+            )
+            viewModel.agregarReceta(
+                nombre = "Hamburguesa",
+                descripcion = "Hamburguesa con queso y vegetales",
+                tipo = "Principal",
+                imagenResId = R.drawable.burger
+            )
         }
     }
 

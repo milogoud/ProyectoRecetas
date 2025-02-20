@@ -13,149 +13,149 @@
     <string name="gestion_platos">Gestión de Platos</string>
     <string name="volver">Volver</string>
     <string name="menu_preferencias">Menu preferencias</string>
-   <string name="postres">Postres</string>
-   <string name="entrantes">Entrantes</string>
-   <string name="platosprincipales">Platos principales</string>
-   <string name="gestion_platos_version">RecetasApp v1.0</string>
-   <string name="desarrollado_por">Desarrollado por Julian</string>
+    <string name="postres">Postres</string>
+    <string name="entrantes">Entrantes</string>
+    <string name="platosprincipales">Platos principales</string>
+    <string name="gestion_platos_version">RecetasApp v1.0</string>
+    <string name="desarrollado_por">Desarrollado por Julian</string>
 
 
-   <string name="preferencias">Preferencias</string>
-   <string name="abrir_pagina_web">Abrir Página Web</string>
-   <string name="acerca_de">Acerca de</string>
-   <string name="modoscuro">Modo oscuro</string>
-   <string name="toast_acerca_de">Gestión de Platos v1.0\nDesarrollado por Julian</string>
+    <string name="preferencias">Preferencias</string>
+    <string name="abrir_pagina_web">Abrir Página Web</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="modoscuro">Modo oscuro</string>
+    <string name="toast_acerca_de">Gestión de Platos v1.0\nDesarrollado por Julian</string>
 
 
-   <!-- Entrantes -->
-   <string name="ensalada_cesar">Ensalada César</string>
-   <string name="desc_ensalada_cesar">Lechuga, pollo, crutones y aderezo César.</string>
+    <!-- Entrantes -->
+    <string name="ensalada_cesar">Ensalada César</string>
+    <string name="desc_ensalada_cesar">Lechuga, pollo, crutones y aderezo César.</string>
 
-   <string name="sopa_tomate">Sopa de Tomate</string>
-   <string name="desc_sopa_tomate">Tomates frescos con albahaca y ajo.</string>
+    <string name="sopa_tomate">Sopa de Tomate</string>
+    <string name="desc_sopa_tomate">Tomates frescos con albahaca y ajo.</string>
 
-   <string name="carpaccio_ternera">Carpaccio de Ternera</string>
-   <string name="desc_carpaccio_ternera">Láminas finas de ternera con queso parmesano.</string>
+    <string name="carpaccio_ternera">Carpaccio de Ternera</string>
+    <string name="desc_carpaccio_ternera">Láminas finas de ternera con queso parmesano.</string>
 
-   <string name="bruschetta_tomate">Bruschetta de Tomate</string>
-   <string name="desc_bruschetta_tomate">Tostadas con tomate, ajo y albahaca.</string>
+    <string name="bruschetta_tomate">Bruschetta de Tomate</string>
+    <string name="desc_bruschetta_tomate">Tostadas con tomate, ajo y albahaca.</string>
 
-   <string name="hummus_pita">Hummus con Pan Pita</string>
-   <string name="desc_hummus_pita">Puré de garbanzos con tahini y aceite de oliva.</string>
+    <string name="hummus_pita">Hummus con Pan Pita</string>
+    <string name="desc_hummus_pita">Puré de garbanzos con tahini y aceite de oliva.</string>
 
-   <string name="rollitos_primavera">Rollitos de Primavera</string>
-   <string name="desc_rollitos_primavera">Rollitos crujientes rellenos de verduras.</string>
+    <string name="rollitos_primavera">Rollitos de Primavera</string>
+    <string name="desc_rollitos_primavera">Rollitos crujientes rellenos de verduras.</string>
 
-   <string name="gazpacho_andaluz">Gazpacho Andaluz</string>
-   <string name="desc_gazpacho_andaluz">Sopa fría de tomate, pimiento y pepino.</string>
+    <string name="gazpacho_andaluz">Gazpacho Andaluz</string>
+    <string name="desc_gazpacho_andaluz">Sopa fría de tomate, pimiento y pepino.</string>
 
-   <string name="patatas_bravas">Patatas Bravas</string>
-   <string name="desc_patatas_bravas">Papas fritas con salsa picante y alioli.</string>
+    <string name="patatas_bravas">Patatas Bravas</string>
+    <string name="desc_patatas_bravas">Papas fritas con salsa picante y alioli.</string>
 
-   <string name="croquetas_jamon">Croquetas de Jamón</string>
-   <string name="desc_croquetas_jamon">Croquetas crujientes rellenas de bechamel y jamón.</string>
+    <string name="croquetas_jamon">Croquetas de Jamón</string>
+    <string name="desc_croquetas_jamon">Croquetas crujientes rellenas de bechamel y jamón.</string>
 
-   <string name="ceviche_pescado">Ceviche de Pescado</string>
-   <string name="desc_ceviche_pescado">Pescado marinado en lima con cebolla y cilantro.</string>
+    <string name="ceviche_pescado">Ceviche de Pescado</string>
+    <string name="desc_ceviche_pescado">Pescado marinado en lima con cebolla y cilantro.</string>
 
-   <string name="champiñones_rellenos">Champiñones Rellenos</string>
-   <string name="desc_champiñones_rellenos">Champiñones al horno rellenos de queso y hierbas.</string>
+    <string name="champiñones_rellenos">Champiñones Rellenos</string>
+    <string name="desc_champiñones_rellenos">Champiñones al horno rellenos de queso y hierbas.</string>
 
-   <string name="queso_camembert">Queso Camembert al Horno</string>
-   <string name="desc_queso_camembert">Queso fundido con miel y nueces.</string>
+    <string name="queso_camembert">Queso Camembert al Horno</string>
+    <string name="desc_queso_camembert">Queso fundido con miel y nueces.</string>
 
-   <string name="tostadas_aguacate">Tostadas de Aguacate</string>
-   <string name="desc_tostadas_aguacate">Pan tostado con aguacate, huevo y especias.</string>
+    <string name="tostadas_aguacate">Tostadas de Aguacate</string>
+    <string name="desc_tostadas_aguacate">Pan tostado con aguacate, huevo y especias.</string>
 
-   <string name="baba_ganoush">Baba Ganoush</string>
-   <string name="desc_baba_ganoush">Crema de berenjena asada con tahini y ajo.</string>
+    <string name="baba_ganoush">Baba Ganoush</string>
+    <string name="desc_baba_ganoush">Crema de berenjena asada con tahini y ajo.</string>
 
-   <!-- Platos Principales -->
-   <string name="lasagna_carne">Lasaña de Carne</string>
-   <string name="desc_lasagna_carne">Capas de pasta con carne y bechamel.</string>
+    <!-- Platos Principales -->
+    <string name="lasagna_carne">Lasaña de Carne</string>
+    <string name="desc_lasagna_carne">Capas de pasta con carne y bechamel.</string>
 
-   <string name="pollo_curry">Pollo al Curry</string>
-   <string name="desc_pollo_curry">Pollo con especias y leche de coco.</string>
+    <string name="pollo_curry">Pollo al Curry</string>
+    <string name="desc_pollo_curry">Pollo con especias y leche de coco.</string>
 
-   <string name="bacalao_vizcaina">Bacalao a la Vizcaína</string>
-   <string name="desc_bacalao_vizcaina">Bacalao con salsa de tomate y pimientos.</string>
+    <string name="bacalao_vizcaina">Bacalao a la Vizcaína</string>
+    <string name="desc_bacalao_vizcaina">Bacalao con salsa de tomate y pimientos.</string>
 
-   <string name="paella_valenciana">Paella Valenciana</string>
-   <string name="desc_paella_valenciana">Arroz con pollo, conejo y verduras.</string>
+    <string name="paella_valenciana">Paella Valenciana</string>
+    <string name="desc_paella_valenciana">Arroz con pollo, conejo y verduras.</string>
 
-   <string name="cochinita_pibil">Cochinita Pibil</string>
-   <string name="desc_cochinita_pibil">Carne de cerdo marinada con achiote y cocida lentamente.</string>
+    <string name="cochinita_pibil">Cochinita Pibil</string>
+    <string name="desc_cochinita_pibil">Carne de cerdo marinada con achiote y cocida lentamente.</string>
 
-   <string name="ratatouille">Ratatouille</string>
-   <string name="desc_ratatouille">Verduras al horno con salsa de tomate y especias.</string>
+    <string name="ratatouille">Ratatouille</string>
+    <string name="desc_ratatouille">Verduras al horno con salsa de tomate y especias.</string>
 
-   <string name="filete_wellington">Filete Wellington</string>
-   <string name="desc_filete_wellington">Carne envuelta en hojaldre con champiñones.</string>
+    <string name="filete_wellington">Filete Wellington</string>
+    <string name="desc_filete_wellington">Carne envuelta en hojaldre con champiñones.</string>
 
-   <string name="cordero_horno">Cordero al Horno</string>
-   <string name="desc_cordero_horno">Pierna de cordero asada con ajo y romero.</string>
+    <string name="cordero_horno">Cordero al Horno</string>
+    <string name="desc_cordero_horno">Pierna de cordero asada con ajo y romero.</string>
 
-   <string name="risotto_setas">Risotto de Setas</string>
-   <string name="desc_risotto_setas">Arroz cremoso con champiñones y queso parmesano.</string>
+    <string name="risotto_setas">Risotto de Setas</string>
+    <string name="desc_risotto_setas">Arroz cremoso con champiñones y queso parmesano.</string>
 
-   <string name="entrecot_parrilla">Entrecot a la Parrilla</string>
-   <string name="desc_entrecot_parrilla">Corte de carne a la brasa con sal gruesa.</string>
+    <string name="entrecot_parrilla">Entrecot a la Parrilla</string>
+    <string name="desc_entrecot_parrilla">Corte de carne a la brasa con sal gruesa.</string>
 
-   <string name="pasta_alfredo">Pasta Alfredo</string>
-   <string name="desc_pasta_alfredo">Fettuccine con salsa cremosa de queso parmesano.</string>
+    <string name="pasta_alfredo">Pasta Alfredo</string>
+    <string name="desc_pasta_alfredo">Fettuccine con salsa cremosa de queso parmesano.</string>
 
-   <string name="salmon_miel_mostaza">Salmón a la Miel y Mostaza</string>
-   <string name="desc_salmon_miel_mostaza">Salmón al horno con glaseado de miel y mostaza.</string>
+    <string name="salmon_miel_mostaza">Salmón a la Miel y Mostaza</string>
+    <string name="desc_salmon_miel_mostaza">Salmón al horno con glaseado de miel y mostaza.</string>
 
-   <string name="goulash">Goulash</string>
-   <string name="desc_goulash">Estofado húngaro de carne con paprika.</string>
+    <string name="goulash">Goulash</string>
+    <string name="desc_goulash">Estofado húngaro de carne con paprika.</string>
 
-   <string name="tacos_pastor">Tacos al Pastor</string>
-   <string name="desc_tacos_pastor">Tacos de cerdo marinados con piña y especias.</string>
+    <string name="tacos_pastor">Tacos al Pastor</string>
+    <string name="desc_tacos_pastor">Tacos de cerdo marinados con piña y especias.</string>
 
 
-   <!-- Postres -->
-   <string name="tarta_fresa">Tarta de Fresa</string>
-   <string name="desc_tarta_fresa">Deliciosa tarta con fresas frescas.</string>
+    <!-- Postres -->
+    <string name="tarta_fresa">Tarta de Fresa</string>
+    <string name="desc_tarta_fresa">Deliciosa tarta con fresas frescas.</string>
 
-   <string name="flan_vainilla">Flan de Vainilla</string>
-   <string name="desc_flan_vainilla">Un flan suave y dulce.</string>
+    <string name="flan_vainilla">Flan de Vainilla</string>
+    <string name="desc_flan_vainilla">Un flan suave y dulce.</string>
 
-   <string name="mousse_chocolate">Mousse de Chocolate</string>
-   <string name="desc_mousse_chocolate">Postre cremoso con chocolate negro.</string>
+    <string name="mousse_chocolate">Mousse de Chocolate</string>
+    <string name="desc_mousse_chocolate">Postre cremoso con chocolate negro.</string>
 
-   <string name="cheesecake_frutos">Cheesecake de Frutos Rojos</string>
-   <string name="desc_cheesecake_frutos">Tarta de queso con frutos del bosque.</string>
+    <string name="cheesecake_frutos">Cheesecake de Frutos Rojos</string>
+    <string name="desc_cheesecake_frutos">Tarta de queso con frutos del bosque.</string>
 
-   <string name="brownie_chocolate">Brownie de Chocolate</string>
-   <string name="desc_brownie_chocolate">Bizcocho de chocolate denso con nueces.</string>
+    <string name="brownie_chocolate">Brownie de Chocolate</string>
+    <string name="desc_brownie_chocolate">Bizcocho de chocolate denso con nueces.</string>
 
-   <string name="creme_brulee">Crème Brûlée</string>
-   <string name="desc_creme_brulee">Crema de vainilla con costra de caramelo.</string>
+    <string name="creme_brulee">Crème Brûlée</string>
+    <string name="desc_creme_brulee">Crema de vainilla con costra de caramelo.</string>
 
-   <string name="helado_pistacho">Helado de Pistacho</string>
-   <string name="desc_helado_pistacho">Helado casero con trozos de pistacho.</string>
+    <string name="helado_pistacho">Helado de Pistacho</string>
+    <string name="desc_helado_pistacho">Helado casero con trozos de pistacho.</string>
 
-   <string name="churros_chocolate">Churros con Chocolate</string>
-   <string name="desc_churros_chocolate">Masa frita con azúcar y chocolate caliente.</string>
+    <string name="churros_chocolate">Churros con Chocolate</string>
+    <string name="desc_churros_chocolate">Masa frita con azúcar y chocolate caliente.</string>
 
-   <string name="tiramisu">Tiramisú</string>
-   <string name="desc_tiramisu">Postre italiano con café, mascarpone y cacao.</string>
+    <string name="tiramisu">Tiramisú</string>
+    <string name="desc_tiramisu">Postre italiano con café, mascarpone y cacao.</string>
 
-   <string name="pavlova">Pavlova</string>
-   <string name="desc_pavlova">Merengue crujiente con crema y frutas.</string>
+    <string name="pavlova">Pavlova</string>
+    <string name="desc_pavlova">Merengue crujiente con crema y frutas.</string>
 
-   <string name="profiteroles">Profiteroles</string>
-   <string name="desc_profiteroles">Bollitos de masa rellenos de crema y cubiertos de chocolate.</string>
+    <string name="profiteroles">Profiteroles</string>
+    <string name="desc_profiteroles">Bollitos de masa rellenos de crema y cubiertos de chocolate.</string>
 
-   <string name="panna_cotta">Panna Cotta</string>
-   <string name="desc_panna_cotta">Postre italiano cremoso con salsa de frutos rojos.</string>
+    <string name="panna_cotta">Panna Cotta</string>
+    <string name="desc_panna_cotta">Postre italiano cremoso con salsa de frutos rojos.</string>
 
-   <string name="pastel_zanahoria">Pastel de Zanahoria</string>
-   <string name="desc_pastel_zanahoria">Bizcocho esponjoso con zanahoria y crema de queso.</string>
+    <string name="pastel_zanahoria">Pastel de Zanahoria</string>
+    <string name="desc_pastel_zanahoria">Bizcocho esponjoso con zanahoria y crema de queso.</string>
 
-   <string name="macarons">Macarons</string>
-   <string name="desc_macarons">Galletas francesas de almendra con relleno cremoso.</string>
+    <string name="macarons">Macarons</string>
+    <string name="desc_macarons">Galletas francesas de almendra con relleno cremoso.</string>
 
 
 </resources>

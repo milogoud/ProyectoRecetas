@@ -47,15 +47,7 @@
             android:paddingTop="8dp" />
 
         <!-- Botón Volver -->
-        <Button
-            android:id="@+id/btnVolver"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/volver"
-            android:backgroundTint="?android:colorPrimary"
-            android:textColor="?android:colorPrimary"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"/>
+
 
     </LinearLayout>
 </FrameLayout>

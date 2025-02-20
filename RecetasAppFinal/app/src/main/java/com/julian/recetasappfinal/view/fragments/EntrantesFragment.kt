@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.julian.recetasappfinal.R
 import com.julian.recetasappfinal.adapter.RecetasAdapter
 import com.julian.recetasappfinal.databinding.FragmentEntrantesBinding
 import com.julian.recetasappfinal.viewmodel.RecetaViewModel
@@ -36,14 +37,44 @@ class EntrantesFragment : Fragment() {
         binding.rvRecetas.layoutManager = LinearLayoutManager(requireContext())
         binding.rvRecetas.adapter = adapter
 
-        // Observar los cambios en los datos de Firebase
+        // Observar los cambios en los datos de Firebase y filtrar por tipo "Entrante"
         viewModel.recetasLiveData.observe(viewLifecycleOwner) { recetas ->
-            adapter.actualizarLista(recetas)
+            val entrantes = recetas.filter { it.tipo == "Entrante" } // Filtrar solo entrantes
+            adapter.actualizarLista(entrantes)
         }
 
-        // Agregar receta de prueba
         binding.btnAgregarReceta?.setOnClickListener {
-            viewModel.agregarReceta("Nueva Receta", "Descripción de la nueva receta", null)
+            // Insertar 5 recetas de entrantes
+            viewModel.agregarReceta(
+                nombre = "Ensalada César",
+                descripcion = "Ensalada con pollo, crutones y aderezo",
+                tipo = "Entrante",
+                imagenResId = R.drawable.ensaladacesar
+            )
+            viewModel.agregarReceta(
+                nombre = "Bruschetta",
+                descripcion = "Pan tostado con tomate, albahaca y aceite de oliva",
+                tipo = "Entrante",
+                imagenResId = R.drawable.bruschetta
+            )
+            viewModel.agregarReceta(
+                nombre = "Sopa de calabaza",
+                descripcion = "Sopa cremosa de calabaza",
+                tipo = "Entrante",
+                imagenResId = R.drawable.calabazin
+            )
+            viewModel.agregarReceta(
+                nombre = "Croquetas de jamón",
+                descripcion = "Croquetas caseras de jamón",
+                tipo = "Entrante",
+                imagenResId = R.drawable.croquetasjamon
+            )
+            viewModel.agregarReceta(
+                nombre = "Empanadillas",
+                descripcion = "Empanadillas de carne o verduras",
+                tipo = "Entrante",
+                imagenResId = R.drawable.empanadillas
+            )
         }
     }
 
