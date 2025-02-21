@@ -5,6 +5,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.julian.recetasappfinal.model.Receta
 import com.julian.recetasappfinal.model.Usuario
 
 class UsuarioRepository {
@@ -39,11 +40,12 @@ class UsuarioRepository {
         return _usuariosLiveData
     }
 
-    fun guardarUsuario(usuario: Usuario) {
-        val id = databaseReference.child("usuarios").push().key // Generar ID
+    fun agregarUsuario(usuario: Usuario) {
+        val id = databaseReference.child("usuario").push().key // Generar ID
         usuario.id = id
-        databaseReference.child("usuarios").child(id!!).setValue(usuario)
+        databaseReference.child("usuario").child(id!!).setValue(usuario)
             .addOnSuccessListener {
+
             }
             .addOnFailureListener {
                 println("Error al agregar usuario: ${it.message}")
