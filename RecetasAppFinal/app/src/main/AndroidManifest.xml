@@ -12,8 +12,11 @@
         android:screenOrientation="unspecified"
         android:supportsRtl="true"
         android:theme="@style/Theme.RecetasAppFinal">
-
-        <activity android:name=".view.activities.Activity1"
+        <activity
+            android:name=".view.activities.RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activities.Activity1"
             android:exported="true" />
         <activity
             android:name=".view.activities.AcercaDeActivity"
@@ -24,7 +27,6 @@
         <activity
             android:name=".view.activities.PreferenciasActivity"
             android:exported="false" />
-
         <activity
             android:name=".view.activities.LoginActivity"
             android:exported="true">
