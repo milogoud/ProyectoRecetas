@@ -40,7 +40,7 @@ class PreferenciasActivity : AppCompatActivity() {
         editor.putBoolean("modoOscuro", activar)
         editor.apply()
 
-        //Aplicar el tema globalmente sin forzar nombres específicos
+        //Aplicar el tema globalmente
         if (activar) {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         } else {

@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.julian.recetasappfinal.R
@@ -53,7 +54,7 @@ class Activity1 : AppCompatActivity() {
                 }
 
                 val seleccion = parent?.getItemAtPosition(position).toString()
-                Toast.makeText(this@Activity1, "Seleccionaste: $seleccion", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@Activity1, getString(R.string.category_selected, seleccion), Toast.LENGTH_SHORT).show()
 
                 // Abrir RecetasActivity y pasar la categoría seleccionada
                 val intent = Intent(this@Activity1, RecetasActivity::class.java)
@@ -87,6 +88,20 @@ class Activity1 : AppCompatActivity() {
             R.id.action_acerca_de -> {
                 val intent = Intent(this, AcercaDeActivity::class.java)
                 startActivity(intent)
+                return true
+            }
+            R.id.action_logout -> {
+                AlertDialog.Builder(this)
+                    .setTitle(getString(R.string.logout_title))
+                    .setMessage(getString(R.string.logout_message))
+                    .setPositiveButton(getString(R.string.yes)) { _, _ ->
+                        // Redirigir a LoginActivity y cerrar la sesión
+                        val intent = Intent(this, LoginActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    }
+                    .setNegativeButton(getString(R.string.no), null)
+                    .show()
                 return true
             }
         }

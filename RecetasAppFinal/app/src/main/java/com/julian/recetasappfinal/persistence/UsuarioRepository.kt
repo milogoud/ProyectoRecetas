@@ -20,7 +20,7 @@ class UsuarioRepository {
     }
 
     private fun cargarUsuarios() {
-        databaseReference.child("usuarios").addValueEventListener(object : ValueEventListener {
+        databaseReference.child("usuario").addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val listaUsuarios = mutableListOf<Usuario>()
                 for (childSnapshot in snapshot.children) {

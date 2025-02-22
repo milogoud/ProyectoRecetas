@@ -3,7 +3,9 @@ package com.julian.recetasappfinal.view.activities
 import UsuarioRepository
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.julian.recetasappfinal.R
 import com.julian.recetasappfinal.databinding.ActivityRegistroBinding
 import com.julian.recetasappfinal.model.Usuario
 
@@ -25,10 +27,15 @@ class RegistroActivity : AppCompatActivity() {
             if (usuario.isNotEmpty() && password.isNotEmpty()) {
                 val nuevoUsuario = Usuario(id = "", usuario = usuario, password = password)
                 usuarioRepository.agregarUsuario(nuevoUsuario)
-                Toast.makeText(this, "Usuario registrado con éxito", Toast.LENGTH_SHORT).show()
-                finish()
+                AlertDialog.Builder(this)
+                    .setView(layoutInflater.inflate(R.layout.dialog_success, null))
+                    .setPositiveButton(getString(R.string.ok)) { _, _ ->
+                        finish() // Cierra la actividad al aceptar
+                    }
+                    .setCancelable(false) // Evita cerrar el diálogo tocando fuera
+                    .show()
             } else {
-                Toast.makeText(this, "Por favor, completa todos los campos", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.fill_fields), Toast.LENGTH_SHORT).show()
             }
         }
     }

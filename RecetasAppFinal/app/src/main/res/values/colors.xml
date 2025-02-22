@@ -29,6 +29,12 @@
     <color name="colorPrimaryDark">#BB86FC</color>
     <color name="colorAccentDark">#03DAC5</color>
 
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="hintTextColor">#757575</color>
+
 
 
 

@@ -7,6 +7,9 @@
         <item>Main Courses</item>
         <item>Desserts</item>
     </string-array>
+    <string name="hint_usuario">User</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_registrar">Register</string>
 
 
         <string name="selecciona_tipo_plato">Select the type of dish.</string>
@@ -16,7 +19,7 @@
     <string name= "postres">Desserts</string>
     <string name= "entrantes">Starters</string>
     <string name= "platosprincipales">Main dishes</string>
-    <string name="gestion_platos_version">RecipesApp v1.0</string>
+    <string name="gestion_platos_version">RecipesApp v1.1</string>
     <string name="desarrollado_por">Developed by Julian</string>
 
 
@@ -161,6 +164,27 @@
 
         <string name="macarons">Macarons</string>
         <string name="desc_macarons">French almond cookies with creamy filling.</string>
+
+    <!-- LoginActivity -->
+    <string name="btn_login">Login</string>
+    <string name="fill_fields">Please, fill all fields</string>
+    <string name="no_users_found">No users found in the database</string>
+    <string name="login_success">Login successful</string>
+    <string name="login_failed">Incorrect username or password</string>
+
+    <!-- RegistroActivity -->
+    <string name="register_success">User registered successfully</string>
+
+    <!-- Activity1 -->
+    <string name="category_selected">You selected: %1$s</string>
+
+    <string name="logout_title">Log out</string>
+    <string name="logout_message">Are you sure you want to log out?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+
+
 
 
 

@@ -8,6 +8,10 @@
     </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_registrar">Registrar</string>
+
 
     <string name="selecciona_tipo_plato">Selecciona el tipo de plato.</string>
     <string name="gestion_platos">Gestión de Platos</string>
@@ -16,7 +20,7 @@
     <string name="postres">Postres</string>
     <string name="entrantes">Entrantes</string>
     <string name="platosprincipales">Platos principales</string>
-    <string name="gestion_platos_version">RecetasApp v1.0</string>
+    <string name="gestion_platos_version">RecetasApp v1.1</string>
     <string name="desarrollado_por">Desarrollado por Julian</string>
 
 
@@ -156,6 +160,27 @@
 
     <string name="macarons">Macarons</string>
     <string name="desc_macarons">Galletas francesas de almendra con relleno cremoso.</string>
+
+    <!-- LoginActivity -->
+    <string name="btn_login">Login</string>
+    <string name="fill_fields">Por favor, completa todos los campos</string>
+    <string name="no_users_found">No se encontraron usuarios en la base de datos</string>
+    <string name="login_success">Inicio de sesión exitoso</string>
+    <string name="login_failed">Usuario o contraseña incorrectos</string>
+
+    <!-- RegistroActivity -->
+    <string name="register_success">Usuario registrado con éxito</string>
+
+    <!-- Activity1 -->
+    <string name="category_selected">Seleccionaste: %1$s</string>
+
+    <string name="logout_title">Cerrar sesión</string>
+    <string name="logout_message">¿Estás seguro de que quieres cerrar sesión?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="ok">Aceptar</string>
+
+
 
 
 </resources>

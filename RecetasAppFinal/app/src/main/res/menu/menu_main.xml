@@ -19,5 +19,9 @@
         android:icon="@android:drawable/ic_menu_info_details"
         android:title="@string/acerca_de"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/logout_title" />
 </menu>
 
